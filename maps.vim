@@ -20,8 +20,24 @@ nmap <Leader>s <Plug>(easymotion-s2)
 
 " Plugs
 map <Leader>p :Files<CR>
+map <Leader>ag :Ag<CR>
 nmap <Leader>nt :NERDTreeFind<CR>
-
 
 " Diagnostics
 nnoremap <Leader>kp :let @*=expand("%")<CR>
+
+" Remap keys for Go to's
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" Run current file
+nnoremap <Leader>x :!node %<cr>
+
+" use <c-space> to trigger completion
+if &filetype == 'javascript' || &filetype == 'javascriptreact'
+  inoremap <c-space> <C-x><C-u>
+else
+  inoremap <silent><expr> <c-space> coc#refresh()
+endif

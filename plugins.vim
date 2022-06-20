@@ -8,6 +8,8 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'sainnhe/sonokai'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+" Plug 'maximbaz/lightline-ale'
+" Plug 'itchyny/lightline.vim'
 
 " Syntax
 Plug 'sheerun/vim-polyglot'
@@ -43,10 +45,8 @@ Plug 'easymotion/vim-easymotion'
 " Repeat
 Plug 'tpope/vim-repeat'
 
-
 " Auto Complete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 
 call plug#end()
 
