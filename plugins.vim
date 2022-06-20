@@ -1,4 +1,4 @@
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin('~/AppData/Local/nvim/plugged')
 
 " IDE
 Plug 'preservim/nerdtree'
@@ -6,7 +6,6 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " Theme
 Plug 'sainnhe/sonokai'
-
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
@@ -43,6 +42,11 @@ Plug 'easymotion/vim-easymotion'
 
 " Repeat
 Plug 'tpope/vim-repeat'
+
+
+" Auto Complete
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 
 call plug#end()
 

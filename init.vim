@@ -10,8 +10,8 @@ set showmatch
 set sw=2
 set relativenumber
 set autoindent
-so ~/.config/nvim/plugins.vim
-so ~/.config/nvim/maps.vim
-so ~/.config/nvim/plugins-config.vim
+so ~/AppData/Local/nvim/plugins.vim
+so ~/AppData/Local/nvim/maps.vim
+so ~/AppData/Local/nvim/plugins-config.vim
 
 
