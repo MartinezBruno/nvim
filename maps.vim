@@ -35,9 +35,10 @@ nmap <silent> gr <Plug>(coc-references)
 " Run current file
 nnoremap <Leader>x :!node %<cr>
 
-" use <c-space> to trigger completion
-if &filetype == 'javascript' || &filetype == 'javascriptreact'
-  inoremap <c-space> <C-x><C-u>
-else
-  inoremap <silent><expr> <c-space> coc#refresh()
-endif
+" Testing
+nnoremap <Leader>t :TestNearest<CR>
+nnoremap <Leader>T :TestFile<CR>
+nnoremap <Leader>TT :TestSuite<CR>
+
+" open term in split window
+nnoremap <Leader>o :vsplit term://powershell<cr>

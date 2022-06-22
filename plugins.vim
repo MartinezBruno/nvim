@@ -3,6 +3,8 @@ call plug#begin('~/AppData/Local/nvim/plugged')
 " IDE
 Plug 'preservim/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'mhinz/vim-signify'
+Plug 'github/copilot.vim'
 
 " Theme
 Plug 'sainnhe/sonokai'
@@ -47,6 +49,9 @@ Plug 'tpope/vim-repeat'
 
 " Auto Complete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Test
+Plug 'vim-test/vim-test'
 
 call plug#end()
 
