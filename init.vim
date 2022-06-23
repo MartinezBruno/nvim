@@ -1,7 +1,6 @@
 set number
 set mouse=a
 set numberwidth=1
-set cursorline
 set clipboard=unnamed
 syntax enable
 set showcmd
@@ -11,7 +10,6 @@ set sw=2
 set relativenumber
 set autoindent
 so ~/AppData/Local/nvim/plugins.vim
-so ~/AppData/Local/nvim/maps.vim
 so ~/AppData/Local/nvim/plugins-config.vim
-
+so ~/AppData/Local/nvim/maps.vim
 

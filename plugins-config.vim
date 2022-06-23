@@ -4,10 +4,10 @@ if has('termguicolors')
 endif
  " The configuration options should be placed before `colorscheme sonokai`.
 
-let g:sonokai_style = 'andromeda'
-let g:sonokai_better_performance = 1
-let g:sonokai_enable_italic = 1       
-colorscheme sonokai
+let g:tokyonight_transparent = "true"
+let g:tokyonight_transparent_sidebar = "true"
+let g:tokyonight_style = "night"
+colorscheme tokyonight
 
 set updatetime=100
 
@@ -19,7 +19,6 @@ let g:airline#extensions#tabline#enabled = 1
 let g:closetag_shortcut = '>'
 let g:closetag_close_shortcut = '<leader>>'
 
-" coc
-autocmd FileType javascript let b:coc_suggest_disable = 0
-autocmd FileType scss setl iskeyword+=@-@
+let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-yank', 'coc-prettier']
 
+command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument

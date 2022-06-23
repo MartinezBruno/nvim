@@ -21,7 +21,7 @@ nmap <Leader>s <Plug>(easymotion-s2)
 " Plugs
 map <Leader>p :Files<CR>
 map <Leader>ag :Ag<CR>
-nmap <Leader>nt :NERDTreeFind<CR>
+nmap <Leader>nt :NERDTreeFocus<CR>
 
 " Diagnostics
 nnoremap <Leader>kp :let @*=expand("%")<CR>
@@ -41,4 +41,7 @@ nnoremap <Leader>T :TestFile<CR>
 nnoremap <Leader>TT :TestSuite<CR>
 
 " open term in split window
-nnoremap <Leader>o :vsplit term://powershell<cr>
+nnoremap <Leader>o :vsplit term://pwsh<cr>
+
+" Formatting
+nnoremap <Leader>f :Prettier<CR>

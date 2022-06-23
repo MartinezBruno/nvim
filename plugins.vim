@@ -6,18 +6,18 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'mhinz/vim-signify'
 Plug 'github/copilot.vim'
 
+" Formatter
+
 " Theme
-Plug 'sainnhe/sonokai'
+" Plug 'sainnhe/sonokai'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-" Plug 'maximbaz/lightline-ale'
-" Plug 'itchyny/lightline.vim'
 
 " Syntax
 Plug 'sheerun/vim-polyglot'
-
-" highlight colors
-" Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+Plug 'ianks/vim-tsx'
+Plug 'leafgarland/typescript-vim'
 
 " fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
